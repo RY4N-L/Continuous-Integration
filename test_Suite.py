@@ -1,7 +1,7 @@
 from test_function import add_numbers
 
 def test_addition():
-    assert add_numbers(3, 5) == 8
+    assert add_numbers(4, 5) == 9
 
 def test_addition_negative_numbers():
     assert add_numbers(-2, 7) == 5
