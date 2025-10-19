@@ -63,6 +63,7 @@ def fit_and_plot(x, y, outfile='random_linear_plot.png', show=False):
 
     plt.figure(figsize=(8, 5))
     plt.scatter(x, y, alpha=0.8, label='data')
+    plt.plot()
     plt.plot(xs, ys, color='red', linewidth=2, label=f'fit: y={m:.3f}x+{c:.3f}')
     plt.xlabel('x')
     plt.ylabel('y')
@@ -87,6 +88,7 @@ def main(show=False):
         print(f"Loaded {len(x)} rows from {csv_path}")
 
     outpath = os.path.join(root, 'random_linear_plot.png')
+    
     fit_and_plot(x, y, outfile=outpath, show=show)
 
 
