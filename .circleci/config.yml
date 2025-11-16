@@ -11,7 +11,7 @@ jobs:
           command: pip install -r requirements.txt
       - run:
           name: Run tests
-          command: pytest Continuous-Integration-activity/test_Suite.py
+          command: pytest Continuous-Integration-activity/test_Suite.py, Data-Pipeline-Activity/test_suite_linear_fit.py
 
 workflows:
   version: 2
