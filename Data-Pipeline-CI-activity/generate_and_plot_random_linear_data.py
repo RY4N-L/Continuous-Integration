@@ -63,6 +63,9 @@ def plot_random_data(m_value, b_value, file_name, plot_image_file_name):
     #Save data to a png file
     print(f"Plot saved as '{plot_image_file_name}'.")
 
+    # Return slope and intercept for unit tests
+    return m, b
+
 # Generate data with specified parameters
 generate_random_data(m, b, values, min_x, max_x, random_linear_data_file)
 
