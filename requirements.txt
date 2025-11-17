@@ -1,2 +1,5 @@
 pytest
 numpy
+pandas
+matplotlib.pyplot
+csv
