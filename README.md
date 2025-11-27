@@ -79,6 +79,6 @@ pytest test_suite_linear_fit.py
 - [ ] Handle missing/NaN values gracefully in pipeline.
 - [ ] Extend models to quadratic/exponential fits.
 - [ ] Add goodness-of-fit metrics (χ², R²).
-- [ ] Explore maximum-likelihood fitting with emcee.
+- [ ] Explore maximum-likelihood fitting with [emcee](https://emcee.readthedocs.io/en/stable/tutorials/line/).
 
 ---
