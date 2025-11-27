@@ -5,7 +5,7 @@ Each folder demonstrates professional repository curation, automated testing, an
 
 ---
 
-## 🌟 Highlights
+## Highlights
 
 - Configured **CircleCI** for automated testing linked to GitHub.  
 - Implemented **unit testing frameworks** with both `unittest` and `pytest`.  
@@ -16,17 +16,17 @@ Each folder demonstrates professional repository curation, automated testing, an
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 - **.circleci ⚙️**  
   - `config.yml` – CircleCI configuration file (Python 3.8 Docker image, installs dependencies, runs tests).  
 
-- **Continuous-Integration-activity 🔄**  
+- **Continuous-Integration-activity**  
   - `test_function.py` – simple function to add two numbers.  
   - `test_suite.py` – unit tests using `unittest`.  
   - `test_suite_alternative.py` – unit tests using `pytest` assertions.  
 
-- **Data-Pipeline-CI-activity 📊**  
+- **Data-Pipeline-CI-activity**  
   - `generate_and_plot_random_linear_data.py` – generates noisy linear data, saves to CSV, and plots best-fit line vs original line.  
   - `plot_random_linear.py` – loads CSV and plots best-fit line.  
   - `random_linear_data.csv` – generated dataset of X and Y values.  
@@ -36,7 +36,7 @@ Each folder demonstrates professional repository curation, automated testing, an
   - `test_random_linear_data.csv` – test dataset.  
   - `test_random_linear_plot.png` – test plot.  
 
-- **requirements.txt 📦**  
+- **requirements.txt**  
   - Contains dependencies: `pytest`, `numpy`, `pandas`, `matplotlib`.  
 
 ---
@@ -49,7 +49,7 @@ Each folder demonstrates professional repository curation, automated testing, an
 pip install -r requirements.txt
 ```
 
-🚀 How to Run
+## How to Run
 Clone the repository:
 
 ```bash
@@ -73,7 +73,7 @@ pytest test_suite_linear_fit.py
 ```
 
 ---
-## 📝 Outstanding Tasks / To‑Do
+## Outstanding Tasks / To‑Do
 
 - [ ] Add error bars to synthetic data and update fitting routine.
 - [ ] Handle missing/NaN values gracefully in pipeline.
