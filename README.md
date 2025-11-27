@@ -18,7 +18,7 @@ Each folder demonstrates professional repository curation, automated testing, an
 
 ## Folder Structure
 
-- **.circleci ⚙️**  
+- **.circleci**  
   - `config.yml` – CircleCI configuration file (Python 3.8 Docker image, installs dependencies, runs tests).  
 
 - **Continuous-Integration-activity**  
@@ -41,7 +41,7 @@ Each folder demonstrates professional repository curation, automated testing, an
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 - Python 3.8+  
 - Install dependencies:
