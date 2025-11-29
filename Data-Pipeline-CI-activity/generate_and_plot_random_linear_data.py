@@ -1,10 +1,12 @@
+## Generates and plots noisy random linear data to compare with original line ##
+
 import csv
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-random_linear_data_file = 'Data-Pipeline-CI-activity/random_linear_data.csv'
-plot_image_file = 'Data-Pipeline-CI-activity/random_linear_plot.png'
+random_linear_data_file = 'random_linear_data.csv'
+plot_image_file = 'random_linear_plot.png'
 m = 2  # slope
 b = 1  # intercept
 values = 50  # number of data points
@@ -12,6 +14,21 @@ min_x = 0
 max_x = 10
 
 def generate_random_data(m_value, b_value, n_values, min_x_value, max_x_value, file_name):
+
+    """
+    Generate random linear data with added noise and save to a CSV file.
+
+    Parameters:
+    m_value (float): Slope of the linear function.
+    b_value (float): Intercept of the linear function.
+    n_values (int): Number of random data points to generate.
+    min_x_value (float): Minimum value for randomly generated x values.
+    max_x_value (float): Maximum value for randomly generated x values.
+    file_name (str): Name of the CSV file to save the generated data.
+
+    Returns:
+    None
+    """
     
     # Generate n random x values between min_x_value and max_x_value
     x_values = np.random.uniform(low = min_x_value, high = max_x_value, size = n_values)
@@ -32,6 +49,18 @@ def generate_random_data(m_value, b_value, n_values, min_x_value, max_x_value, f
     print(f"CSV file '{file_name}' created with {n_values} random data points.")
 
 def plot_random_data(m_value, b_value, file_name, plot_image_file_name):
+    """
+    Plot random linear data from a CSV file, fit a line of best fit, and compare with original line. Save the plot as an image.
+
+    Parameters:
+    m_value (float): Original slope used to generate the data.
+    b_value (float): Original intercept used to generate the data.
+    file_name (str): Name of the CSV file containing the data.
+    plot_image_file_name (str): Name of the image file to save the plot.
+
+    Returns:
+    tuple: (m, b) slope and intercept of the fitted line for validation or unit testing.
+    """
 
     # Load CSV file
     df = pd.read_csv(file_name)

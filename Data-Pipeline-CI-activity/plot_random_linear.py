@@ -1,9 +1,11 @@
+## Plot random linear data ##
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
 # Load CSV file
-df = pd.read_csv('Data-Pipeline-CI-activity/random_linear_data.csv')
+df = pd.read_csv('random_linear_data.csv')
 
 # Obtain x and y values
 x = df['x']

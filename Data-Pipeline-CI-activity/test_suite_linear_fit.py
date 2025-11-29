@@ -1,9 +1,10 @@
+## ## Unit tests using unittest module ##
+
 import unittest
 import os
 import pandas as pd
 import numpy as np
 from generate_and_plot_random_linear_data import generate_random_data, plot_random_data
-
 
 class TestLinearFit(unittest.TestCase):
 
@@ -42,7 +43,7 @@ class TestLinearFit(unittest.TestCase):
         self.assertAlmostEqual(b_fit, self.b_true, delta=0.5)
 
 class TestFileCreation(unittest.TestCase):
-
+    
     def setUp(self):
         self.data_file = "Data-Pipeline-CI-activity/test_random_linear_data1.csv"
         self.plot_file = "Data-Pipeline-CI-activity/test_random_linear_plot1.png"
