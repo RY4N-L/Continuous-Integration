@@ -1,10 +1,9 @@
 # DAT5501 Continuous Integration & Data Pipeline
 
 This repository contains activities for the DAT5501 module focused on **Continuous Integration (CI)** with CircleCI and the development of a **data validation pipeline**.  
-Each folder demonstrates professional repository curation, automated testing, and iterative development practices.
 
 ---
-
+---
 ## Highlights
 
 - Configured **CircleCI** for automated testing linked to GitHub.  
@@ -23,18 +22,18 @@ Each folder demonstrates professional repository curation, automated testing, an
 
 - **Continuous-Integration-activity**  
   - `test_function.py` – simple function to add two numbers.  
-  - `test_suite.py` – unit tests using `unittest`.  
-  - `test_suite_alternative.py` – unit tests using `pytest` assertions.  
+  - `test_Suite.py` – unit tests using `unittest`.  
+  - `test_Suite_alternative.py` – unit tests using `pytest` assertions.  
 
 - **Data-Pipeline-CI-activity**  
   - `generate_and_plot_random_linear_data.py` – generates noisy linear data, saves to CSV, and plots best-fit line vs original line.  
   - `plot_random_linear.py` – loads CSV and plots best-fit line.  
-  - `random_linear_data.csv` – generated dataset of X and Y values.  
+  - `random_linear_data.csv` – generated dataset of random X and Y values.  
   - `random_linear_plot.png` – saved plot of data and fitted line.  
-  - `static_linear_data.csv` – static dataset for validation.  
+  - `static_linear_data.csv` – static dataset for manual validation/testing purposes.  
   - `test_suite_linear_fit.py` – unit tests for data pipeline (numeric checks, file creation, slope/intercept tolerance).  
-  - `test_random_linear_data.csv` – test dataset.  
-  - `test_random_linear_plot.png` – test plot.  
+  - `test_random_linear_data.csv` – test dataset created from unit tests.  
+  - `test_random_linear_plot.png` – test plot created from unit tests.  
 
 - **requirements.txt**  
   - Contains dependencies: `pytest`, `numpy`, `pandas`, `matplotlib`.  
@@ -53,8 +52,7 @@ pip install -r requirements.txt
 Clone the repository:
 
 ```bash
-git clone https://github.com/RY4N-L/Continuous-Integration.git
-cd CI_pipeline
+git clone https://github.com/RY4N-L/DAT5501-ContinuousIntegration.git
 ```
 
 Run the Continuous Integration activity:
