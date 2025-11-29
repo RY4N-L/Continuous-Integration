@@ -53,6 +53,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/RY4N-L/DAT5501-ContinuousIntegration.git
+cd DAT5501-ContinuousIntegration
 ```
 
 Run the Continuous Integration activity:
