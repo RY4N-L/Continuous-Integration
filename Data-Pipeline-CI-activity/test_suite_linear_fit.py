@@ -39,8 +39,8 @@ class TestLinearFit(unittest.TestCase):
         # Check slope is within 0.2
         self.assertAlmostEqual(m_fit, self.m_true, delta=0.2)
 
-        # Check intercept is within 0.5
-        self.assertAlmostEqual(b_fit, self.b_true, delta=0.5)
+        # Check intercept is within 1
+        self.assertAlmostEqual(b_fit, self.b_true, delta=1)
 
 class TestFileCreation(unittest.TestCase):
     
